@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="splide-4.1.3/dist/css/splide.min.css">
+        <title>Stephen Reyno - BSIT</title>
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <div>
+                    <img class="logo" alt="Logo/Gif">
+                </div>
+                <div>
+                    <h2>Portfolio Website</h2>
+                </div>
+            </div>
+            <div class="navbar">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contacts.html"  class="active">Contacts</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="container">
+            <div>
+                <div><h2><span>Olivarez</span> Projects</h2></div>
+                <section id="project-slider" class="splide" aria-label="Slide Container Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="splide__slide__container social-icons">
+                                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <footer>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-steam"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="copyrights">
+                <p>&copy; Stephen Reyno 2025 - 2026</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+            </div>
+        </footer>
+        <script src="splide-4.1.3/dist/js/splide.min.js"></script>
+        <script type="text/javascript">
+            var splide = new Splide( '#project-slider', {
+            heightRatio: 0.5,
+            width : '50rem', 
+            type   : 'loop',
+            drag   : 'free',
+            snap   : true,
+            perPage: 1,
+            } );
+            splide.mount();
+        </script>
+    </body>
+</html>

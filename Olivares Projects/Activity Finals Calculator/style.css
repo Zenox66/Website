@@ -1,0 +1,105 @@
+:root {
+    --page-bg: #d9ffe8;
+    --header-bg: #2b9348;
+    --header-text: #ffffff;
+
+    --calc-bg: #7ed9b2;
+
+    --input-bg: #ffe7a8;
+    --input-text: #000000;
+
+    --btn-bg: #4caf50;
+    --btn-hover: #3d9142;
+    --btn-text: #ffffff;
+
+    --equal-bg: #2f7abf;
+    --equal-hover: #2667a3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PAGE BACKGROUND */
+body {
+    background: var(--page-bg);
+    padding-top: 20px;
+}
+
+/* HEADER */
+header h1 {
+    text-align: center;
+    background: var(--header-bg);
+    padding: 25px;
+    color: var(--header-text);
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+/* CALCULATOR */
+.calc {
+    width: 360px;
+    margin: auto;
+    background: var(--calc-bg);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+/* INPUT BOX */
+.box {
+    background: var(--input-bg);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.input {
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    background: var(--input-bg);
+    color: var(--input-text);
+}
+
+/* BUTTON GRIDS */
+.container {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* BUTTONS */
+button {
+    height: 65px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: var(--btn-hover);
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.equal {
+    background: var(--equal-bg);
+}
+
+.equal:hover {
+    background: var(--equal-hover);
+}

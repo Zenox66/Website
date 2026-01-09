@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked List</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <section>
+        <form>
+            <p>Enter a number: </p>
+            <input type="text" name="number" id="number">
+            <input type="button" name="submit" id="submit" value="Submit" onclick="myList.addNodeBegin()">
+            <br /><br />
+            <p>Displaying List #:<span id="displayIndex"></span> </p>
+            <p>Content:</p>
+            <div style="text-align: center; padding: 5em;">
+                <p><span id="displayText"></span></p>
+            </div>
+            <input type="button" name="prevItem" id="prevItem" value="Previous" onclick="myList.prev()">
+            <input type="button" name="delete" id="delete" value="Remove" onclick="myList.delete()">
+            <input type="button" name="nextItem" id="nextItem" value="Next" onclick="myList.next()">
+        </form>
+    </section>
+</body>
+<script>
+
+    class Node{
+        constructor(value){
+            this.value = value;
+            this.next = null;
+            this.prev = null;
+        }
+    };
+
+    class linkedList{
+        constructor(){
+            this.head = null;
+            this.tail = null;
+            this.current = null;
+        }
+
+        addNodeBegin(){
+            var value = document.getElementById('number');
+            let newnode= new Node(value.value);
+
+            if(!this.head){
+                this.head = newnode;
+                this.tail = newnode;
+                this.current = newnode;
+                return; 
+            }
+            else {
+                this.tail.next = newnode;
+                newnode.prev = this.tail;
+                this.tail = newnode;
+            };
+            this.updateDisplay();
+            this.updateContent();
+        };
+
+        getCurrentIndex() {
+            let index = 1;
+            let node = this.head;
+            while (node && node !== this.current) {
+                node = node.next;
+                index++;
+            }
+            return node ? index : -1;
+        }
+
+        updateDisplay() {
+            if (this.current) {
+                document.getElementById("displayIndex").textContent = this.getCurrentIndex();
+            }
+        }
+
+        updateContent(){
+            if(this.current){
+                document.getElementById("displayText").textContent = this.current.value;
+            }
+        }
+
+        next() {
+            if (this.current && this.current.next) {
+                this.current = this.current.next;
+            }
+            this.updateDisplay();
+            this.updateContent();
+        }
+        deleteStart(){
+
+        }
+        delete(){
+            if (this.head == null) {
+                alert("List is empty!");
+                return;
+            }
+            if (pos == 0) return this.deleteStart();
+            let current = this.head;
+            
+        }
+
+        prev() {
+            if (this.current && this.current.prev) {
+                this.current = this.current.prev;
+            }
+            this.updateDisplay();
+            this.updateContent();
+       }
+    }
+    
+    let myList = new linkedList();
+</script>
+</html>

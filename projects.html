@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="dist/css/splide.min.css">
+        <title>Stephen Reyno - BSIT</title>
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <div>
+                    <img class="logo" alt="Logo/Gif">
+                </div>
+                <div>
+                    <h2>Portfolio Website</h2>
+                </div>
+            </div>
+            <div class="navbar">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="container">
+            <div>
+                <h2>Choose a Project!</h2>
+                <div class="projectType">
+                    <button class="projectLink_active" onclick="openList('Olivarez')">Olivares</button>
+                    <button class="projectLink" onclick="openList('Personal')">Personal</button>
+                    <button class="projectLink" onclick="openList('FEU')">FEU</button>
+                </div>
+            </div>
+            <div id="Olivarez" class="projectContent" style="display: block;">
+                <div><h2><span>Olivarez</span> Projects</h2></div>
+                <section id="project-slider1" class="splide" aria-label="Projects">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="Assets/Images/activity1.png" alt="Website" class="image">
+                                    <h3>Activity #2</h3>
+                                    <p>Lorem ipsum</p>
+                                    <a>Click Here</a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="Assets/Images/activity2.png" alt="Website" class="image">
+                                    <h3>Activity #3</h3>
+                                    <p>Lorem ipsum</p>
+                                    <a>Click Here</a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="Assets/Images/activity3.png" alt="Website" class="image">
+                                    <h3>Activity #4</h3>
+                                    <p>Lorem ipsum</p>
+                                    <a>Click Here</a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="Assets/Images/exam4.png" alt="Website" class="image">
+                                    <h3>Exam</h3>
+                                    <p>Lorem ipsum</p>
+                                    <a>Click Here</a>
+                                </div>
+                            </li>                                
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div id="Personal" class="projectContent">
+                <div><h2><span>Personal</span> Projects</h2></div>
+                <section id="project-slider2" class="splide" aria-label="Projects">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="" alt="Website" class="image">
+                                    <h3>Linked List</h3>
+                                    <p>Lorem ipsum</p>
+                                    <a>Click Here</a>
+                                </div>
+                            </li>                       
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div id="FEU" class="projectContent">
+                <div><h2><span>FEU</span> Projects</h2></div>
+                <section id="project-slider3" class="splide" aria-label="Projects">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="" alt="Website" class="image">
+                                    <h3>Activity #2</h3>
+                                    <p>Lorem ipsum</p>
+                                    <a>Click Here</a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="Assets/Images/activity2.png" alt="Website" class="image">
+                                    <h3>Activity #3</h3>
+                                    <p>Lorem ipsum</p>
+                                    <a>Click Here</a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="Assets/Images/activity3.png" alt="Website" class="image">
+                                    <h3>Activity #4</h3>
+                                    <p>Lorem ipsum</p>
+                                    <a>Click Here</a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="Assets/Images/exam4.png" alt="Website" class="image">
+                                    <h3>Exam</h3>
+                                    <p>Lorem ipsum</p>
+                                    <a>Click Here</a>
+                                </div>
+                            </li>                                
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <footer>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-steam"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="copyrights">
+                <p>&copy; Stephen Reyno 2025 - 2026</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+            </div>
+        </footer>
+        <script src="dist/js/splide.min.js"></script>
+        <script type="text/javascript">
+            var splide = new Splide( '#project-slider1', {
+            heightRatio: 0.5,
+            width : '50rem', 
+            type   : 'loop',
+            drag   : 'free',
+            snap   : true,
+            perPage: 3,
+            } );
+            splide.mount();
+            var splide = new Splide( '#project-slider2', {
+            heightRatio: 0.5,
+            width : '50rem', 
+            type   : 'loop',
+            drag   : 'free',
+            snap   : true,
+            perPage: 3,
+            } );
+            splide.mount();
+            var splide = new Splide( '#project-slider3', {
+            heightRatio: 0.5,
+            width : '50rem', 
+            type   : 'loop',
+            drag   : 'free',
+            snap   : true,
+            perPage: 3,
+            } );
+            splide.mount();
+        </script>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>

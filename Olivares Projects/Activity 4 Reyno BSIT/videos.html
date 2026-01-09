@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+			position: sticky;
+			color: rgb(65,66,136);
+			background-color: rgb(152,223,175);
+			text-align: center;
+			width: 100%;
+			bottom: 0%;
+		}
+        body{
+            background-color: azure;
+        }
+        .video {
+            text-align: center;
+            padding: 10px;
+            margin: 20px;
+            border: 20px;
+            border-color: aqua;
+            border-radius: 20px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <section class="video">
+        <div>
+            <h3>[3D Touhou] Eternal Nights part 2, by MinusT: </h3>
+        </div>
+        <div>
+            <video controls autoplay>
+                <source src="videos/Touhou_by_TMinus.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <section>
+        <div>
+            <p>Here is the music for the video</p>
+        </div>
+        <div>
+            <audio controls>
+             <source src="videos/Funni.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </section>
+    <section>
+        <h3><a href="index.html">Return</a></h3>
+    </section>
+    <footer>
+        &copy; Stephen Reyno 2025 - 2026
+    </footer>
+</body>
+</html>

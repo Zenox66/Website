@@ -1,0 +1,49 @@
+body {
+    background: #e3f2fd;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+/* BULB CONTAINER */
+.light-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* LIGHT BULB */
+.bulb {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #555; /* bulb off */
+    transition: 0.3s;
+    box-shadow: 0 0 0px transparent;
+}
+
+/* BULB WHEN ON */
+.bulb.on {
+    background: #fffec4;
+    box-shadow: 0 0 40px #fff27a, 0 0 80px #ffeb3b;
+}
+
+/* SWITCH BUTTON */
+.switch-container button {
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 8px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.switch-container button:hover {
+    background: #3d8c42;
+}

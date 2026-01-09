@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+    --primary: #3C467B;
+    --primary2: #50589C;
+    --secondary: #636CCB;
+    --secondary2: #6E8CFB;
+    --text-white: #e8eef3;
+    --text-black: #00000000;
+}
+
+*{
+    scroll-margin-top: 50px;
+}
+
+body{
+    background-color: var(--primary);
+}
+
+.title {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3em;
+    padding: 1em;
+    color: var(--text-white);
+    text-shadow: 4px 4px var(--primary2);
+}
+
+.spacing {
+    text-indent: 2em;
+    word-spacing: 2px;
+}
+
+section>h2{
+    color: var(--text-white);
+}
+
+p:first-letter{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*Navigation Bar*/
+
+nav{
+    background-color: var(--secondary2);
+    padding: 1em;
+    position: sticky;
+    top: 0px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    background-color: var(--primary2); 
+}
+
+ul li{
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: var(--text-white);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    background-color: var(--secondary);
+}
+
+/*Containers*/
+
+.container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondary2);
+}
+
+.container>figure{
+    background-color: var(--secondary2);
+    margin: 2em;
+    text-align: center;
+}
+
+section, header, footer{
+    background-color: var(--secondary);
+}
+
+section>h2{
+    text-decoration: underline;
+    text-align: center;
+}
+
+footer{
+    text-align: end;
+    margin: 1em 0px;
+    padding: 1em;
+    color: var(--text-white); 
+}
+
+#Home{
+    display: flex;
+    justify-content: center;
+}
+
+#About{
+    padding: 2em;
+}
+
+#About>div{
+    padding: 20px;
+    background-color: var(--secondary2);
+}
+
+#Project{
+    padding: 1em;
+}
+
+#Contact{
+    padding: 1em;
+}
